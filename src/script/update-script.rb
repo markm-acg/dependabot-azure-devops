@@ -37,8 +37,8 @@ $options = {
   excluded_requirements: ENV['DEPENDABOT_EXCLUDE_REQUIREMENTS_TO_UNLOCK']&.split(" ")&.map(&:to_sym) || [],
 
   # Details on the location of the repository
-  azure_organization: ENV["AZURE_ORGANIZATION"],
-  azure_project: ENV["AZURE_PROJECT"],
+  azure_organization: ENV["AZURE_ORGANIZATION"] || "markmikula",
+  azure_project: ENV["AZURE_PROJECT"] "Dependency Scanning",
   azure_repository: ENV["AZURE_REPOSITORY"],
   azure_hostname: ENV["AZURE_HOSTNAME"] || "dev.azure.com",
   azure_protocol: ENV["AZURE_PROTOCOL"] || "https",
